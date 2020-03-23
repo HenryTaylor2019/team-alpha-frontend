@@ -6,9 +6,12 @@ import {
 } from "react-router-dom";
 
 
-import Navbar from "./Components/Navbar";
+import Header from "./Components/Header";
 import GamePage from "./GamePage.js"
-import Footer from "./Components/Footer.js"
+
+
+import Instructions from "./Instructions";
+import Scores from "./Scores";
 
 const App = () => (
 
@@ -16,7 +19,15 @@ const App = () => (
 
     <Fragment>
 
-      <Navbar />
+      <Route >
+        <Header />
+      </Route>
+
+      <Switch>
+        <Route exact path="/">
+          <Instructions />
+        </Route>
+      </Switch>
 
       <Switch>
         <Route path="/gamepage">
@@ -24,7 +35,13 @@ const App = () => (
         </Route>
       </Switch>
 
-        <Footer />
+      <Switch>
+        <Route path="/scores">
+          <Scores />
+        </Route>
+      </Switch>
+
+
 
     </Fragment>
   </Router>

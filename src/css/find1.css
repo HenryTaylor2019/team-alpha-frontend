@@ -9,6 +9,7 @@
     }
      .gallery {
         background-color: rgb(236, 236, 236);
+        padding: 40px;
     }
      .find-gallery {
         width: 40%;
@@ -57,4 +58,27 @@
         text-align: center;
         padding: 40px;
         background-color: bisque;
+    }
+
+    .instructions-section {
+        text-align: center;
+        padding: 40px;
+        
+    }
+
+    .list{
+        list-style-type: none;
+    }
+
+    .img-counter {
+        position: absolute;
+        display: block;
+        text-align: left;
+        font-size: 28px;
+    }
+
+    .timer {
+        /* position: relative; */
+        text-align: center;
+        font-size: 28px;
     }
