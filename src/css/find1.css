@@ -13,7 +13,7 @@
      .find-gallery {
         width: 40%;
         text-align: center;
-        margin: 10px auto;
+        margin:  auto;
     }
      .photo {
          position: relative;
@@ -29,7 +29,7 @@
         padding: 10px;
         border: 0px solid;
     }
-    button {
+    .button {
         width: 60px;
         height: 60px;
         position: absolute;
@@ -42,4 +42,19 @@
     a {
         cursor: default;
     }
+
+    .page-div {
+        text-align: center;
+    }
     
+    .header-div {
+        text-align: center;
+        padding: 40px;
+        background-color: bisque;
+    }
+
+    .footer-div {
+        text-align: center;
+        padding: 40px;
+        background-color: bisque;
+    }
