@@ -6,7 +6,7 @@ import {
 
 
 import Header from "./Components/Header";
-import GamePage from "./Components/Game/GamePage.js"
+import GamePage from "./Components/Game/GamePage"
 
 
 import Instructions from "./Components/Instructions/Instructions";
