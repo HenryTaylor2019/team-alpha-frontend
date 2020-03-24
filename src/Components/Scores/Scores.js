@@ -1,5 +1,4 @@
 import React from "react";
-import '../../css/find1.css';
 import stock from '../../Images/stock.png'
 import FooterScores from "./FooterScores";
 

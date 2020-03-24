@@ -1,12 +1,11 @@
 import React from "react";
-import '../../css/find1.css';
 
 
-const FooterGame = () => {
+const FooterGame = ({ handleIncrement }) => {
 
     return(
         <div className="footer-div">
-          <button >Skip Round</button>
+          <button onClick={ handleIncrement }>Skip Round</button>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 const initialState = {
-  counter: 2,
+  counter: 1,
   score: 0,
   images: [
     {

@@ -1,5 +1,5 @@
 import { createStore } from "redux";
-import initialState from './initialState.js';
+import initialState from './initialState';
 import reducer from './reducers/reducer';
 
 

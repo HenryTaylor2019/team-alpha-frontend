@@ -1,6 +1,5 @@
 import React from "react";
-import '../../../css/find1.css';
-import FooterGame from "../FooterGame";
+import FooterGame from "./FooterGame/FooterGame";
 import HeaderGame from "../HeaderGame";
 
 
