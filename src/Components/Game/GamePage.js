@@ -1,18 +1,17 @@
 import React, { Component } from "react";
-import './css/find1.css';
-import stock from './Images/stock.png'
-import FooterGame from "./Components/FooterGame";
+import '../../css/find1.css';
+import stock from '../../Images/stock.png'
+import FooterGame from "./FooterGame";
+import HeaderGame from "./HeaderGame";
+
 
 class Gamepage extends Component {
-    constructor(props) {
-        super(props);
 
-
-    }
 
     render() {
         return (
             <>
+            <HeaderGame />
                 <div>
                     <div className="gallery">
 

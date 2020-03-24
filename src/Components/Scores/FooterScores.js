@@ -1,10 +1,9 @@
 import React from "react";
-import '../css/find1.css';
+import '../../css/find1.css';
 import { Link } from "react-router-dom";
 
 
 const FooterScores = () => {
-
 
     return (
         <div className="footer-div">

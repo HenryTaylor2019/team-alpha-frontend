@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import './css/find1.css';
-import stock from './Images/stock.png'
-import FooterInstructions from "./Components/FooterInstructions";
+import '../../css/find1.css';
+import FooterInstructions from "./FooterInstructions";
 
 class Instructions extends Component {
     render() {

@@ -15,8 +15,6 @@ const CountDown = () => {
         <progress value="0" max="10" id="progressBar"></progress>
 
     )
-
-
 }
 
 export default CountDown;
