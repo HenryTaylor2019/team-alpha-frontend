@@ -1,9 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
-import FooterGame from "./FooterGame";
-=======
 import FooterGame from "./FooterGame/";
->>>>>>> c97aeb50ed7acfd7ff00d8505cbb64f413df9dc1
 import HeaderGame from "../HeaderGame";
 
 

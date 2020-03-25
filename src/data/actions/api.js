@@ -1,4 +1,14 @@
-export const getData = () => (dispatch) => {
+import axios from '../axios';
 
-    console.log("hello")
+
+export const getData = () => (dispatch) => {
+    axios.get("/").then(({ data }) => {
+        console.log(data); 
+    
+        dispatch ({
+            type:"SET_IMAGES",
+            images: data.data,
+        })
+    });
 }
+

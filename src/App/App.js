@@ -18,9 +18,9 @@ class App extends React.Component{
     this.props.getData();
   }
   render(){
-    return(
+    let {loaded}= this.props
+    return !loaded?<p>Loading</p> : (
       <Router>
-
       <Fragment>
         <Route exact path="/">
           <Header />
