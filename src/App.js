@@ -4,10 +4,8 @@ import {
   Route,
 } from "react-router-dom";
 
-
 import Header from "./Components/Header";
 import GamePage from "./Components/Game/GamePage"
-
 
 import Instructions from "./Components/Instructions/Instructions";
 import Scores from "./Components/Scores";
@@ -36,11 +34,3 @@ const App = ({ counter, handleCounter }) => (
 );
 export default App;
 
-
-{/* <>
-  <div>
-    <img onClick={ handleCounter}/>
-  </div>
-
-<p>{counter}/0</p>
-  </> */}

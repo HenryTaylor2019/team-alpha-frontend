@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import GamePage from './GamePage';
-
+import { increment } from '../../../data/actions';
 const mapStateToProps = (state) => {
     
     return {
@@ -8,14 +8,12 @@ const mapStateToProps = (state) => {
     
     }
 }
-
-// const mapDispatchToProps = (state) => {
+const mapDispatchToProps = (dispatch) => {
     
-//     return {
-//         handleIncrement: () => { 
-//             dispatch (increment())
-//         }
-//     }
-// }
-
-export default connect(mapStateToProps)(GamePage);
+    return {
+        handleIncrement: () => { 
+            dispatch (increment())
+        }
+    }
+}
+export default connect(mapStateToProps,mapDispatchToProps)(GamePage);

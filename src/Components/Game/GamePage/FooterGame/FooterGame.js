@@ -5,7 +5,7 @@ const FooterGame = ({ handleIncrement }) => {
 
     return(
         <div className="footer-div">
-          <button onClick={ handleIncrement }>Skip Round</button>
+          <button type="button" onClick={ handleIncrement }>Skip Round</button>
         </div>
     )
 }

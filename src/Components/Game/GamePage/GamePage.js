@@ -1,5 +1,5 @@
 import React from "react";
-import FooterGame from "./FooterGame/FooterGame";
+import FooterGame from "./FooterGame/";
 import HeaderGame from "../HeaderGame";
 
 
@@ -16,7 +16,7 @@ const Gamepage = ({ handleIncrement, srcImage }) => {
                         <figure className="photo">
 
                             <picture>
-                                <img src={ srcImage }alt="stockimage" />
+                                <img src={ srcImage } alt="stockimage" />
                             </picture>
                             <div
                                 onClick={ handleIncrement }
@@ -31,7 +31,6 @@ const Gamepage = ({ handleIncrement, srcImage }) => {
                     </section>
                 </div>
             </div>
-
             <FooterGame />
         </>
     );
