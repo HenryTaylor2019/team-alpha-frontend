@@ -1,23 +1,27 @@
 import React from "react";
-import stock from '../../Images/stock.png'
 import FooterScores from "./FooterScores";
+
+
 
 
 const Scores = ({ score }) => (
     <>
-        <div className="gallery">
+        <section class="find-gallery">
             <h1>Your Score:</h1>
-            <h2>{ score }</h2>
-            <section className="find-gallery">
-                <figure className="photo">
+            <h2>{score} out of 10</h2>
+            
+            <figure class="photo">
+                <picture>
+                    <img src="https://github.com/HenryTaylor2019/team-alpha-frontend/blob/2a6e9771eaf98f486d1b990a7ceb4c44963cd4ef/src/Atomic/img/congratulations.jpg?raw=true" alt="congratulations"/>
+                </picture>
+            </figure>
+        </section>
 
-                    <picture>
-                        <img src={stock} alt="stockimage"/>
-                    </picture>
-                </figure>
 
-            </section>
-        </div>
+
+
+
+
         <FooterScores />
     </>
 );

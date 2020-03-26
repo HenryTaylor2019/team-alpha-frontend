@@ -4,7 +4,7 @@ import HeaderGame from "../HeaderGame";
 import { Link } from 'react-router-dom';
 
 
-const Gamepage = ({ handleIncrement, handleIncrementScore, srcImage, style, counter }) => {
+const Gamepage = ({ handleIncrement, srcImage, style, counter }) => {
 
 
     return (

@@ -11,10 +11,10 @@ class Instructions extends Component {
                     <section class="first-page resolution">
 
                         <h3>Instructions</h3>
-                        <p>In order to survive a pandemic, you will need to confidently and quickly spot potential hazards. This game will help you test your skills in hazard percetion and potentially sve your life!</p>
+                        <p class="text">In order to survive a pandemic, you will need to confidently and quickly spot potential hazards. This game will help you test your skills in hazard percetion and potentially sve your life!</p>
 
                         <h3>The Rules</h3>
-                        <p>Click on the hazard in the photo before the time runs out.
+                        <p class="text">Click on the hazard in the photo before the time runs out.
                         You have 20 seconds for each photo
                         There are 10 photos in each round
                         When you are ready, click the button below to start.
