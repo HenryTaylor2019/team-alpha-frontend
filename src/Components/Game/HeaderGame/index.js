@@ -1,5 +1,7 @@
 import { connect } from 'react-redux';
 import HeaderGame from './HeaderGame';
+import { increment } from '../../../data/actions/actions';
+
 
 const mapStateToProps = (state) => {
     return {
@@ -7,4 +9,13 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(HeaderGame);
+const mapDispatchToProps = (dispatch) => {
+    
+    return {
+        handleIncrement: () => { 
+            dispatch (increment())
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(HeaderGame);

@@ -1,5 +1,5 @@
 body {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 10px auto;
 }
 
@@ -33,11 +33,11 @@ body {
     height: 50%;
 } */
 
-/* .first-page {
+.first-page {
 
     width: 50%;
     height: 50%;
-} */
+}
 
 .next {
     display: flex;
@@ -49,6 +49,7 @@ body {
 .resolution {
     width: 50%;
     margin: 10px;
+    margin-right: 30px;
   
 }
 

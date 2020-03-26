@@ -1,23 +1,27 @@
 import React from "react";
-import CountDown from "../../CountDown.js"
+import CountDown from "../GamePage/CountDown/CountDown.js"
 
 
-const Header = ({ counter }) => { 
+const Header = ({ counter, handleIncrement }) => {
 
-        return (
-            <>
-                <div className="header-div">
-                    <div className="img-counter">
-                        {/* Update counter below */}
-                        <p>{counter}/10</p> 
-                    </div>
-                    <div className="timer">
-                     <CountDown />
-                    </div>
-                    <h1>Hazard Perception</h1>
+    return (
+        <>
+            <div className="main-header">
+                <div className="img-counter">
+
+                    <p className="main-title">{counter}/10</p>
                 </div>
-            </>
-        );
+
+                {/* <div className="countdown-div">
+                    <h2 className="countdown">0:30</h2>
+                </div> */}
+                <div className="countdown-div">
+                     <CountDown  />
+                    </div>
+                <h1 className="main-title">Hazard Perception</h1>
+            </div>
+        </>
+    );
 
 }
 

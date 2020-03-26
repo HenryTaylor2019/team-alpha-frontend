@@ -1,35 +1,38 @@
 import React from "react";
 import FooterGame from "./FooterGame/";
 import HeaderGame from "../HeaderGame";
+import { Link } from 'react-router-dom';
 
 
-const Gamepage = ({ handleIncrement, srcImage }) => {
+const Gamepage = ({ handleIncrement, handleIncrementScore, srcImage, style, counter }) => {
+
 
     return (
         <>
             <HeaderGame />
-            <div>
-                <div className="gallery">
 
-                    <section >
-                        <p className="title">Click on the Hazard</p>
-                        <figure className="photo">
+            <div className="gallery">
+                <section >
+                    <figure className="photo">
 
-                            <picture>
-                                <img src={ srcImage } alt="stockimage" />
-                            </picture>
+                        <picture className="img-container">
+                            <img src={srcImage} alt="stockimage" />
+                        </picture>
+                        {counter === 10 ? <Link to="/scores">
                             <div
-                                onClick={ handleIncrement }
-                                style={{
-                                    padding: '20px',
-                                    backgroundColor: 'red'
-                                }}>
-
+                                style={style}
+                                className="hidden-div"
+                            >
                             </div>
-                        </figure>
+                        </Link> : <div
+                            onClick={handleIncrement}
+                            style={style}
+                            className="hidden-div"
+                        >
+                            </div>}
+                    </figure>
 
-                    </section>
-                </div>
+                </section>
             </div>
             <FooterGame />
         </>

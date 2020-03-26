@@ -8,7 +8,7 @@
         color: rgb(51, 81, 87);
     }
      .gallery {
-        background-color: rgb(236, 236, 236);
+        background-color: rgb(246, 170, 25);
         padding: 40px;
     }
      .find-gallery {
@@ -16,9 +16,7 @@
         text-align: center;
         margin:  auto;
     }
-     .photo {
-         position: relative;
-    }
+
      .photo img {
         width: 100%;
         height: 100%;
@@ -57,7 +55,7 @@
     .footer-div {
         text-align: center;
         padding: 40px;
-        background-color: bisque;
+        background-color: black;
     }
 
     .instructions-section {
@@ -73,13 +71,27 @@
     .img-counter {
         position: absolute;
         display: block;
-        text-align: left;
+        top: 5%;
+        left: 2%;
         font-size: 28px;
     }
 
     .timer {
-        /* position: relative; */
         text-align: center;
         font-size: 28px;
     }
-    
+
+    .photo {
+        position: relative;
+        height: 100%;
+        width: 100%;
+   }
+
+   .img-container {
+    height: 440px;
+    width: 800px;
+}
+
+   .hidden-div{
+    position: absolute;
+}

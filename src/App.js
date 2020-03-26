@@ -10,7 +10,9 @@ import GamePage from "./Components/Game/GamePage"
 import Instructions from "./Components/Instructions/Instructions";
 import Scores from "./Components/Scores";
 
-const App = ({ counter, handleCounter }) => (
+
+
+const App = () => (
   <Router>
 
     <Fragment>
@@ -19,7 +21,7 @@ const App = ({ counter, handleCounter }) => (
         <Header />
         <Instructions />
       </Route>
-
+   
       <Route path="/gamepage">
         <GamePage />
       </Route>
@@ -28,7 +30,7 @@ const App = ({ counter, handleCounter }) => (
         <Header />
         <Scores />
       </Route>
-
+   
     </Fragment>
   </Router>
 );

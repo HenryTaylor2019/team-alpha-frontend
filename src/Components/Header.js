@@ -7,12 +7,11 @@ class Header extends Component {
 
         return (
             <>
-                <div className="header-div">
-                    <div className="img-counter">
-                        
-                    </div>
-                    <h1>Hazard Perception</h1>
-                </div>
+                <header className="main-header">
+
+                    <h2 className="main-title">Hazard Perception</h2>
+
+                </header>
             </>
         );
     }
