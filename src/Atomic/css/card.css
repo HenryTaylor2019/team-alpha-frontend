@@ -4,7 +4,6 @@ body {
 }
 
 .main-card {
-
     max-width: 1200px;
     margin: 10px auto;
 }
@@ -13,12 +12,7 @@ body {
     width: 60%;
     text-align: center;
     margin: 10px auto;
-
 }
-
-/* .photo {
-    position: relative;
-} */
 
 .photo img {
     width: 100%;
@@ -27,29 +21,15 @@ body {
     margin: 10px auto;
 }
 
-/* .photo-main img {
-
-    width: 50%;
-    height: 50%;
-} */
-
-/* .first-page {
-
-    width: 50%;
-    height: 50%;
-} */
-
 .next {
     display: flex;
     justify-content: space-between;
-    margin: 10px auto;
-    /* background-color: rgb(252, 15, 3) */
+    background-color: rgb(232, 226, 225); 
 }
 
 .resolution {
     width: 50%;
-    margin: 10px;
-  
+    margin: 10px; 
 }
 
 .rest {
@@ -60,5 +40,4 @@ body {
 .middle {
     display: block;
     margin: 10px auto;
-
 }

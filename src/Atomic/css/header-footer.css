@@ -2,13 +2,11 @@
 .main-header {
 	background: black;
 	text-align: center;
-	padding: 5px;
+	padding: 3px;
 }
 
 
 .card-header {
-
-	/* background:  rgb(246, 170, 25); */
 	display: flex;
 	justify-content: space-between;
 	padding: 5px;
@@ -17,26 +15,30 @@
 .result-header {
 	background:  rgb(246, 170, 25);
 	text-align: center;
-	padding: 5px;
+	padding: 3px;
+
+}
+
+.resultRepeat-header {
+	background: black;
+	text-align: center;
+	padding: 3px;
 
 }
 
 .main-footer {
 	background: black;
 	color: rgb(246, 170, 25);
-	padding: 10px;
+	padding: 20px;
 	text-align: center;
 }
 
-
 .card-footer {
-	padding: 10px;
 	text-align: center;
+	padding: 5px;
 }
 
 .result-footer {
-
-	/* background:  rgb(246, 170, 25); */
 	text-align: center;
-	padding: 10px;
+	padding: 5px;
 }
