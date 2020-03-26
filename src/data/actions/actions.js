@@ -13,4 +13,11 @@ export const incrementScore = () => {
 }
 
 
+export const gameReset = () => {
+    return {
+        type: "RESET"
+    }
+}
+
+
 

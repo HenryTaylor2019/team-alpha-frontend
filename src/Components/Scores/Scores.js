@@ -1,5 +1,5 @@
 import React from "react";
-import FooterScores from "./FooterScores";
+import FooterScores from "../Game/FooterScore/";
 
 
 

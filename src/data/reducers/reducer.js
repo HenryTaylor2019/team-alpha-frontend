@@ -1,3 +1,4 @@
+import initialState from '../../data/initialState';
 
 
 const counterReducer = state => ({...state, counter: state.counter + 1});
@@ -25,7 +26,8 @@ const counterReducer = state => ({...state, counter: state.counter + 1});
         switch (action.type) {
             case "INCREMENT_COUNTER": return counterReducer(state);
             case "INCREMENT_SCORE": return scoreReducer(state);
-            case "SET_IMAGES": return setImages(state,action)
+            case "SET_IMAGES": return setImages(state,action);
+            case "RESET": return initialState;
   
         default: return state;
         }
