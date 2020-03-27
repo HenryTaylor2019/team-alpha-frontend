@@ -1,20 +1,78 @@
-import React from "react";
+import React, { Component } from "react";
 
-const CountDown = ({time}) => {
+class CountDown extends Component {
+  constructor() {
+    super();
+    this.state = { timer:null, seconds: 10 };
+    this.startTimer = this.startTimer.bind(this);
+    this.countDown = this.countDown.bind(this);
+    // this.timeExpired = this.timeExpired.bind(this);
+  }
+  
+  secondsToTime(secs){
+    let hours = Math.floor(secs / (60 * 60));
+    let divisor_for_minutes = secs % (60 * 60);
+    let minutes = Math.floor(divisor_for_minutes / 60);
+    let divisor_for_seconds = divisor_for_minutes % 60;
+    let seconds = Math.ceil(divisor_for_seconds);
+    let obj = {
+      "h": hours,
+      "m": minutes,
+      "s": seconds
+    };
+    return obj;
+  }
 
-        let timer = time;
-
-        let warning = time <= 5 ? { color: 'red' } : { color: 'rgb(246, 170, 25)' };
-
-        return (
-            <div>
-                <h2 className="countdown" style={warning}>{timer}</h2>
-            </div>
-        );
+  componentDidMount() {
+    this.startTimer();
+  }
+  
+  startTimer() {
+    this.setState({timer:setInterval(this.countDown, 1000)});
     
+  }
+  countDown() {
+    // Remove one second, set state so a re-render happens.
+    let seconds = this.state.seconds - 1;
+    this.setState({
+      seconds: seconds,
+    });
+    // Check if we're at zero.
+    if (seconds == 0) { 
+      clearInterval(this.state.timer);
+    }
+  }
+
+  timeExpired(){
+
+    return this.state.seconds === 0? this.props.timerExpired(this.resetTimer()): null;
+  }
+
+  resetTimer(){
+
+    this.setState({ seconds: 10 });
+    this.startTimer();
+  }
+
+  render() {
+    let timer= this.state.seconds;
+    let warning = (timer <= 5 ? { color: 'red' } : { color: 'rgb(246, 170, 25)' });
+    this.timeExpired();
+
+    return(
+      <div>
+        <h2 className="countdown" style={warning}>{timer}</h2>
+      </div>
+    );
+  }
 }
 
-export default CountDown;
+export default CountDown
+
+
+
+
+
 
 
 // Create a class based component with this.state
