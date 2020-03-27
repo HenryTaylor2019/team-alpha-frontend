@@ -6,7 +6,6 @@ class CountDown extends Component {
     this.state = { timer:null, seconds: 10 };
     this.startTimer = this.startTimer.bind(this);
     this.countDown = this.countDown.bind(this);
-    // this.timeExpired = this.timeExpired.bind(this);
   }
   
   secondsToTime(secs){
