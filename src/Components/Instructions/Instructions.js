@@ -20,7 +20,17 @@ class Instructions extends Component {
                             There are 10 photos in each round
                             When you are ready, click the button below to start.
                         </p>
-                        <h4>Good Luck!</h4>
+                        <br/>
+
+                        <form className="form-check" action="/action_page.php">
+                            <p>Select Difficulty:</p>
+                            <input className="form-check-input" type="radio" id="Whimp" name="difficulty" value="Whimp"/>
+                            <label class="form-check-label"  for="Whimp"> Feeling Whimpy</label><br/>
+                            <input className="form-check-input" type="radio" id="Feeling Confident" name="difficulty" value="Feeling Confident"/>
+                            <label class="form-check-label"  for="Feeling Confident"> Feeling Confident</label><br/>
+                            <input className="form-check-input" type="radio" id="Chuck Norris" name="difficulty" value="Chuck Norris"/>
+                            <label class="form-check-label"  for="Chuck Norris"> Duke Nukem</label>
+                        </form>
 
                         <div class="button-wrapper">
                             <Link to="/gamepage">

@@ -20,13 +20,13 @@ const Scores = ({ score }) => (
 
             {score >= 5 ? 
             <div>
-            <h1>Congratulations </h1>
+            <h1 className="yellow">Congratulations </h1>
             <p>Your speed and perception has helped stop the pandemic escalating. After saving the human race you stand in a field of maize with your arms raised triumphantly as the sun sets... </p>
             </div>
             :
             <div>
-            <h1>Failed</h1>
-            <p>Your inability to spot basic hazards has led to the spread of the pandemic and the destruction of the species</p> 
+            <h1 className="red">Failed</h1>
+            <p>Your inability to spot basic hazards has led to the spread of the pandemic and the destruction of the species.</p> 
             <p>Better luck next time...</p>
             </div>
             }
