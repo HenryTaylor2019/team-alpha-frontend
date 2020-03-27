@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import FooterGame from './FooterGame';
-import { increment } from '../../../../data/actions/actions';
+import { increment } from '../../../data/actions/actions';
 
 
 const mapStateToProps = (state) => {

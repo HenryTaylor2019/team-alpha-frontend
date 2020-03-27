@@ -1,5 +1,5 @@
 import React from "react";
-import CountDown from "../GamePage/CountDown/CountDown.js"
+import CountDown from "../CountDown/CountDown.js"
 
 
 const Header = ({ counter, handleIncrement }) => {

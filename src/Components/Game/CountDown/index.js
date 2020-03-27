@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import CountDown from './CountDown';
-import { increment } from '../../../../data/actions/actions';
+import { increment } from '../../../data/actions/actions';
 
 
 class CountDown extends Component {

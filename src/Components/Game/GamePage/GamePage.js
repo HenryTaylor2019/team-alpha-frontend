@@ -1,5 +1,5 @@
 import React from "react";
-import FooterGame from "./FooterGame/";
+import FooterGame from "../FooterGame";
 import HeaderGame from "../HeaderGame";
 import { Link } from 'react-router-dom';
 
