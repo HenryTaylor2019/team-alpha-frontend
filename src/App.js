@@ -11,6 +11,7 @@ import Instructions from "./Components/Instructions/Instructions";
 import Scores from "./Components/Scores";
 
 
+// Do we need this as there is an app folder now?
 
 const App = () => (
   <Router>
