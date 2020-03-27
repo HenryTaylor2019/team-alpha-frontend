@@ -6,10 +6,10 @@ const mapStateToProps = (state) => {
     return {
         srcImage: state.images[(state.counter -1)].url,
         style: {
-            top: state.images[(state.counter -1)].top,
-            bottom: state.images[(state.counter -1)].bottom,
-            left: state.images[(state.counter -1)].left,
-            right: state.images[(state.counter -1)].right,
+            top: `${state.images[(state.counter -1)].top}%`,
+            bottom: `${state.images[(state.counter -1)].bottom}%`,
+            left: `${state.images[(state.counter -1)].left}%`,
+            right: `${state.images[(state.counter -1)].right}%`,
             position: 'absolute',
             //  backgroundColor: 'red',
         },
@@ -17,11 +17,13 @@ const mapStateToProps = (state) => {
     }
 }
 const mapDispatchToProps = (dispatch) => {
-    
+    console.log('ahhh')
     return {
+        
         handleIncrement: () => { 
             dispatch (increment())
             dispatch (incrementScore())
+            
             
         },
     }
