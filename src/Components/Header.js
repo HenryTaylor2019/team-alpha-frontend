@@ -9,7 +9,8 @@ class Header extends Component {
             <>
                 <header className="main-header">
 
-                    <h2 className="main-title">Hazard Perception</h2>
+                    <h4 className="main-title">Alpha Team Presents...</h4>
+                    <h1 className="main-title">Hazard Perception</h1>
 
                 </header>
             </>

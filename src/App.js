@@ -28,7 +28,7 @@ const App = () => (
       </Route>
 
       <Route path="/scores">
-        <Header />
+        {/* <Header /> */}
         <Scores />
       </Route>
    

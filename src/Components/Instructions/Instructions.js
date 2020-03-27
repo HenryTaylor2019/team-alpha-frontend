@@ -8,12 +8,12 @@ class Instructions extends Component {
             <>
                 <div class="next">
 
-                    <section class="first-page resolution">
+                    <section class="first-page resolution intro-text">
 
-                        <h3>Instructions</h3>
+                        <h3 className="text-title">Instructions</h3>
                         <p class="text">In order to survive a pandemic, you will need to confidently and quickly spot potential hazards in your day to day life. This game will help you test your skills in hazard percetion could and potentially save your life so you best take it seriously!</p>
 
-                        <h3>The Rules</h3>
+                        <h3 className="text-title">The Rules</h3>
                         <p class="text">
                             Click on the hazard in the photo before the time runs out
                             There is one hazard per page
@@ -22,7 +22,7 @@ class Instructions extends Component {
                         </p>
                         <h4>Good Luck!</h4>
 
-                        <div class="rest">
+                        <div class="button-wrapper">
                             <Link to="/gamepage">
                                 <button class="begin-button" onclick="">Begin Test</button>
                             </Link>

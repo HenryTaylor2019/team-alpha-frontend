@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 const FooterScores = ({handleIncrement}) => {
 
     return (
-        <div className="footer-div">
+        <div className="result-footer">
             <Link to="/">
-                <button onClick={handleIncrement} type="button" href="/">Play Again</button>
+                <button className="skip-button" onClick={handleIncrement} type="button" href="/">Play Again</button>
             </Link>
         </div>
     )
