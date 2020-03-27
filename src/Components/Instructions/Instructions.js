@@ -11,25 +11,32 @@ class Instructions extends Component {
                     <section class="first-page resolution intro-text">
 
                         <h3 className="text-title">Instructions</h3>
-                        <p class="text">In order to survive a pandemic, you will need to confidently and quickly spot potential hazards in your day to day life. This game will help you test your skills in hazard percetion could and potentially save your life so you best take it seriously!</p>
+                        <p class="text">In order to survive a pandemic, you will need to confidently and quickly spot potential hazards in your day to day life. This game will test your skills in hazard percetion and will help stop a virus spreading globally and wiping out humankind.</p>
 
                         <h3 className="text-title">The Rules</h3>
-                        <p class="text">
-                            Click on the hazard in the photo before the time runs out
-                            There is one hazard per page
-                            There are 10 photos in each round
-                            When you are ready, click the button below to start.
-                        </p>
-                        <br/>
+                        <ul>
+                            <li class="text">
+                                There is one hazard per page
+                            </li>
+                            <li class="text">
+                                Click on the hazard in the photo before the time runs out
+                            </li>
+                            <li class="text">
+                                There are 10 photos in each test
+                            </li>
+                            <li class="text">
+                                When you are ready, click the button below to start.
+                        </li>
+                        </ul>
 
                         <form className="form-check" action="/action_page.php">
-                            <p>Select Difficulty:</p>
-                            <input className="form-check-input" type="radio" id="Whimp" name="difficulty" value="Whimp"/>
-                            <label class="form-check-label"  for="Whimp"> Feeling Whimpy</label><br/>
-                            <input className="form-check-input" type="radio" id="Feeling Confident" name="difficulty" value="Feeling Confident"/>
-                            <label class="form-check-label"  for="Feeling Confident"> Feeling Confident</label><br/>
-                            <input className="form-check-input" type="radio" id="Chuck Norris" name="difficulty" value="Chuck Norris"/>
-                            <label class="form-check-label"  for="Chuck Norris"> Duke Nukem</label>
+                            <h5>Select Difficulty:</h5>
+                            <input className="form-check-input" type="radio" id="Feeling Whimpy" name="difficulty" value="Feeling Whimpy" />
+                            <label class="form-check-label" for="Feeling Whimpy"> Feeling Whimpy</label><br />
+                            <input className="form-check-input" type="radio" id="Feeling Confident" name="difficulty" value="Feeling Confident" />
+                            <label class="form-check-label" for="Feeling Confident"> Feeling Confident</label><br />
+                            <input className="form-check-input" type="radio" id="Duke Nukem" name="difficulty" value="Duke Nukem" />
+                            <label class="form-check-label" for="Duke Nukem"> Duke Nukem</label>
                         </form>
 
                         <div class="button-wrapper">
