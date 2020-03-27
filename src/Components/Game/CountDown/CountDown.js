@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 class CountDown extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { timer:null, seconds: 10 };
     this.startTimer = this.startTimer.bind(this);
     this.countDown = this.countDown.bind(this);
@@ -26,8 +26,16 @@ class CountDown extends Component {
   componentDidMount() {
     this.startTimer();
   }
+
+  componentDidUpdate(previousProps){
+    if(this.props.counter!== previousProps.counter){
+      // clearInterval(this.state.timer);
+      this.resetTimer();
+    }
+  }
   
   startTimer() {
+    clearInterval(this.state.timer);
     this.setState({timer:setInterval(this.countDown, 1000)});
     
   }
@@ -39,10 +47,9 @@ class CountDown extends Component {
     });
     // Check if we're at zero.
     if (seconds == 0) { 
-      clearInterval(this.state.timer);
+      // clearInterval(this.state.timer);
     }
   }
-
   timeExpired(){
 
     return this.state.seconds === 0? this.props.timerExpired(this.resetTimer()): null;
@@ -58,6 +65,7 @@ class CountDown extends Component {
     let timer= this.state.seconds;
     let warning = (timer <= 5 ? { color: 'red' } : { color: 'rgb(246, 170, 25)' });
     this.timeExpired();
+    console.log(this.props);
 
     return(
       <div>
