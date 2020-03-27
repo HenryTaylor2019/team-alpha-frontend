@@ -17,7 +17,6 @@ const mapStateToProps = (state) => {
     }
 }
 const mapDispatchToProps = (dispatch) => {
-    console.log('ahhh')
     return {
         
         handleIncrement: () => { 
@@ -30,13 +29,3 @@ const mapDispatchToProps = (dispatch) => {
 }
 export default connect(mapStateToProps,mapDispatchToProps)(GamePage);
 
-// function actionCreator(payload) {
-//     return dispatch => {
-//         dispatch(action1(payload))
-//         dispatch(action2(payload))
-//     }
-// }
-// const mapDispatchToProps = dispatch => ({
-//     action1: some_payload => dispatch(action1(some_payload))
-//     action2: some_payload => dispatch(action2(some_payload))
-//  })
