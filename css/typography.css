@@ -4,6 +4,7 @@ body {
 h1, h2, h3, h4, h5 {
     color: black;
     text-align: center;
+    font-family: 'Anton', sans-serif;
 }
 
 h1 {
@@ -36,3 +37,8 @@ a {
 footer {
     font-size: small;
 }
+
+.red {
+    color: red;
+}
+
