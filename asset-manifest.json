@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/static/js/main.1e3ae792.chunk.js",
-    "main.js.map": "/static/js/main.1e3ae792.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ae0f25c3.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ae0f25c3.js.map",
-    "static/js/2.715446ba.chunk.js": "/static/js/2.715446ba.chunk.js",
-    "static/js/2.715446ba.chunk.js.map": "/static/js/2.715446ba.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.cd7ac9cd73b834cd6b3120c21c5ac2be.js": "/precache-manifest.cd7ac9cd73b834cd6b3120c21c5ac2be.js",
-    "service-worker.js": "/service-worker.js",
-    "static/js/2.715446ba.chunk.js.LICENSE.txt": "/static/js/2.715446ba.chunk.js.LICENSE.txt"
+    "main.js": "/team-alpha-frontend/static/js/main.1e3ae792.chunk.js",
+    "main.js.map": "/team-alpha-frontend/static/js/main.1e3ae792.chunk.js.map",
+    "runtime-main.js": "/team-alpha-frontend/static/js/runtime-main.6d64ed6c.js",
+    "runtime-main.js.map": "/team-alpha-frontend/static/js/runtime-main.6d64ed6c.js.map",
+    "static/js/2.715446ba.chunk.js": "/team-alpha-frontend/static/js/2.715446ba.chunk.js",
+    "static/js/2.715446ba.chunk.js.map": "/team-alpha-frontend/static/js/2.715446ba.chunk.js.map",
+    "index.html": "/team-alpha-frontend/index.html",
+    "precache-manifest.198634514db1b3be02e2c72fdd417a37.js": "/team-alpha-frontend/precache-manifest.198634514db1b3be02e2c72fdd417a37.js",
+    "service-worker.js": "/team-alpha-frontend/service-worker.js",
+    "static/js/2.715446ba.chunk.js.LICENSE.txt": "/team-alpha-frontend/static/js/2.715446ba.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ae0f25c3.js",
+    "static/js/runtime-main.6d64ed6c.js",
     "static/js/2.715446ba.chunk.js",
     "static/js/main.1e3ae792.chunk.js"
   ]
