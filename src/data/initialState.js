@@ -1,6 +1,7 @@
 const initialState = {
   counter: 1,
   score: 1,
+  time: 10,
   images: [
     {
       "id": 1,

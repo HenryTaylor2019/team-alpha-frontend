@@ -2,6 +2,14 @@ import { connect } from 'react-redux';
 import CountDown from './CountDown';
 import { increment } from '../../../data/actions/actions';
 
+const mapStateToProps = (state) =>{
+
+    return {
+        counter: state.counter
+    }
+
+}
+
 
 const mapDispatchToProps = (dispatch) => {
 
@@ -12,4 +20,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(null, mapDispatchToProps)(CountDown);
+export default connect(mapStateToProps, mapDispatchToProps)(CountDown);

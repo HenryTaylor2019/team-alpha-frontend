@@ -1,5 +1,5 @@
 import React from "react";
-import CountDown from "../CountDown/"
+import CountDown from "../CountDown"
 
 
 const Header = ({ counter, handleIncrement }) => {
@@ -16,7 +16,7 @@ const Header = ({ counter, handleIncrement }) => {
                     <h2 className="countdown">0:30</h2>
                 </div> */}
                 <div className="countdown-div">
-                     <CountDown  />
+                     <CountDown/>
                     </div>
                 <h1 className="main-title">Hazard Perception</h1>
             </div>
