@@ -27,7 +27,11 @@ const counterReducer = state => ({...state, counter: state.counter + 1});
             case "INCREMENT_COUNTER": return counterReducer(state);
             case "INCREMENT_SCORE": return scoreReducer(state);
             case "SET_IMAGES": return setImages(state,action);
-            case "RESET": return initialState;
+            case "RESET": return {
+              ...initialState,
+              images: state.images,
+              loaded: true
+            };
   
         default: return state;
         }

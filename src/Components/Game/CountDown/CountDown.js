@@ -78,11 +78,11 @@ export default CountDown
 
 
 
-// Create a class based component with this.state
-// Add a progress or timeRemaining value to this.state
-// Update the JSX to use that value 
-// In componentDidMount  create a setInterval that updates the appropriate value with setState
-// Technically speaking you should cancel the timer on componentWillUnmount
-// You shouldn't need any document. anything.
-// I'd do it with a class rather than Hooks, because it's a bit simpler.
+// // Create a class based component with this.state
+// // Add a progress or timeRemaining value to this.state
+// // Update the JSX to use that value 
+// // In componentDidMount  create a setInterval that updates the appropriate value with setState
+// // Technically speaking you should cancel the timer on componentWillUnmount
+// // You shouldn't need any document. anything.
+// // I'd do it with a class rather than Hooks, because it's a bit simpler.
 

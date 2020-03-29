@@ -8,7 +8,7 @@ const FooterScores = () => {
     return (
         <div className="footer-div">
             <Link to="/">
-                <button type="button" href="/">Play Again</button>
+                <button type="button" >Play Again</button>
             </Link>
         </div>
     )
