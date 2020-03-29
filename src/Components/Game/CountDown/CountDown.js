@@ -6,7 +6,6 @@ class CountDown extends Component {
     this.state = { timer:null, seconds: 10 };
     this.startTimer = this.startTimer.bind(this);
     this.countDown = this.countDown.bind(this);
-    // this.timeExpired = this.timeExpired.bind(this);
   }
   
   secondsToTime(secs){
@@ -29,7 +28,6 @@ class CountDown extends Component {
 
   componentDidUpdate(previousProps){
     if(this.props.counter!== previousProps.counter){
-      // clearInterval(this.state.timer);
       this.resetTimer();
     }
   }
@@ -40,14 +38,11 @@ class CountDown extends Component {
     
   }
   countDown() {
-    // Remove one second, set state so a re-render happens.
     let seconds = this.state.seconds - 1;
     this.setState({
       seconds: seconds,
     });
-    // Check if we're at zero.
     if (seconds == 0) { 
-      // clearInterval(this.state.timer);
     }
   }
   timeExpired(){
